@@ -3,7 +3,7 @@ import {Canvas} from "@react-three/fiber";
 import {OrbitControls, Preload,useGLTF} from "@react-three/drei";
 import CanvasLoader from '../Loader';
 const Computers = ({isMobile}) => {
- const computer = useGLTF('/desktop_pc/scene.gltf');
+ const computer = useGLTF(import.meta.env.BASE_URL+'/desktop_pc/scene.gltf');
  console.log(computer)
  console.log(isMobile,"isMobile");
   return (
